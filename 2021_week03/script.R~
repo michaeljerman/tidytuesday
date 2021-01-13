@@ -1,0 +1,14 @@
+library(tidyverse)
+library(pwt9)
+library(ggmap)
+
+df_artists <- read_csv("../tidytuesday/data/2021/2021-01-12/artists.csv") 
+df_artwork <- read_csv("../tidytuesday/data/2021/2021-01-12/artwork.csv")
+
+## countries <- df_artists %>%
+##     mutate(country = str_extract(placeOfBirth, '\\b[^,]+$')) %>%
+##     select(country) %>%
+##     filter(!is.na(country)) 
+## countries <- tibble(country = unique(countries$country))
+## locations <- mutate_geocode(countries, country)
+## write_csv(locations, "locations.csv")
